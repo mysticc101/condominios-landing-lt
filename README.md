@@ -1,6 +1,6 @@
 # Altum San Isidro
 
-Landing editorial para un proyecto residencial premium en San Isidro, Lima. Construida con Next.js App Router, React, TypeScript y Tailwind CSS.
+Landing page para un proyecto de venta de condominios. Desarrollada con Next.js (App Router), React, TypeScript y Tailwind CSS.
 
 ## Desarrollo
 

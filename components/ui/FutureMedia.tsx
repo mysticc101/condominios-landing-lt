@@ -8,7 +8,6 @@ type FutureMediaProps = {
   tone?: "ink" | "sage" | "stone";
 };
 
-/** A quiet, full-bleed reserve for final photography, renders, or film. */
 export default function FutureMedia({
   alt,
   className,
