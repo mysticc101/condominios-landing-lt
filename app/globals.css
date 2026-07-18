@@ -76,8 +76,7 @@ section[id], #contacto { scroll-margin-top: 1rem; }
 .hero-poster__facts dd { margin: 0; font-size: 0.7rem; }
 
 .statement-section { background: #ebe8df; }
-.statement-section__masthead { display: grid; grid-template-columns: 1fr minmax(18rem, 0.78fr); gap: 2rem; padding-bottom: clamp(3rem, 7vw, 7rem); border-bottom: 1px solid var(--line); }
-.statement-section__masthead > p:last-child { max-width: 27rem; margin: 0; font-size: 0.9rem; line-height: 1.7; }
+.statement-section__masthead { display: grid; grid-template-columns: 1fr minmax(18rem, 0.78fr); gap: 2rem; padding-bottom: clamp(1.5rem, 2.5vw, 2rem); border-bottom: 1px solid var(--line); }.statement-section__masthead > p:last-child { max-width: 27rem; margin: 0; font-size: 0.9rem; line-height: 1.7; }
 .statement-section__headline { display: grid; grid-template-columns: minmax(5rem, 0.28fr) minmax(0, 1fr); gap: 1rem; padding: clamp(3rem, 7vw, 7rem) 0; }
 .statement-section__headline > span { color: #778571; font-family: var(--font-display); font-size: clamp(5rem, 10vw, 11rem); letter-spacing: -0.1em; line-height: 0.76; }
 .statement-section h2 { max-width: 59rem; margin: 0; font-family: var(--font-display); font-size: clamp(3.4rem, 7.5vw, 7.9rem); font-weight: 400; letter-spacing: -0.082em; line-height: 0.88; }
@@ -105,9 +104,9 @@ section[id], #contacto { scroll-margin-top: 1rem; }
 .residence-index__note { width: min(calc(100% - 2.5rem), 84rem); margin: 1.2rem auto 0; color: rgb(255 255 255 / 0.48); font-size: 0.61rem; line-height: 1.5; }
 
 .architecture-section { overflow: hidden; background: #f7f5ef; }
-.architecture-section__header { display: grid; grid-template-columns: 1fr minmax(17rem, 0.66fr); gap: 2rem; width: min(calc(100% - 2.5rem), 84rem); margin: 0 auto; }
+.architecture-section__header { display: grid; grid-template-columns: 1fr minmax(17rem, 0.66fr); gap: 2rem; width: min(calc(100% - 2.5rem), 84rem); margin: 0 auto; padding-bottom: clamp(1.5rem, 2.5vw, 2rem); border-bottom: 1px solid var(--line); }
 .architecture-section__header > p:last-child { max-width: 28rem; margin: 0; font-size: 0.9rem; line-height: 1.7; }
-.architecture-section__composition { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(20rem, 0.85fr); width: min(calc(100% - 2.5rem), 84rem); margin: clamp(3rem, 9vw, 9rem) auto 0; }
+.architecture-section__composition { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(20rem, 0.85fr); width: min(calc(100% - 2.5rem), 84rem); margin: clamp(1.5rem, 3vw, 3rem) auto 0; }
 .architecture-section__copy { display: grid; grid-template-columns: minmax(4rem, 0.25fr) minmax(0, 1fr); align-content: start; gap: 0.4rem 1.2rem; padding-right: clamp(2rem, 8vw, 8rem); }
 .architecture-section__copy > span { color: #81917b; font-family: var(--font-display); font-size: clamp(5rem, 10vw, 11rem); letter-spacing: -0.1em; line-height: 0.76; }
 .architecture-section h2 { margin: 0; font-family: var(--font-display); font-size: clamp(3rem, 6.7vw, 7rem); font-weight: 400; letter-spacing: -0.08em; line-height: 0.86; }
@@ -222,7 +221,6 @@ html[data-a11y-motion="reduce"] *, html[data-a11y-motion="reduce"] *::before, ht
 @media (max-width: 31rem) { .statement-section__principles { grid-template-columns: 1fr; } .hero-poster__foot { grid-template-columns: 1fr; gap: 1rem; } .hero-poster h1 { font-size: 4rem; } .lead-form { padding: 1.4rem; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } [data-reveal="pending"], [data-reveal="visible"] { opacity: 1; transform: none; } }
 
-/* Live media and scroll-led introduction */
 .hero-scroll { position: relative; height: 400svh; color: #ffffff; --hero-tint: rgb(109 77 48 / 0.28); }
 .hero-scroll--stone { --hero-tint: rgb(83 68 52 / 0.48); }
 .hero-scroll--sage { --hero-tint: rgb(42 73 55 / 0.5); }
@@ -246,8 +244,7 @@ html[data-a11y-motion="reduce"] *, html[data-a11y-motion="reduce"] *::before, ht
 .hero-scroll__bottom span:last-child { justify-self: end; font-size: 1rem; }
 .hero-scroll__track { display: grid; height: 300svh; }
 
-/* Project, residences, and lived experience */
-.statement-section__headline { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(16rem, 0.5fr); gap: clamp(2rem, 9vw, 10rem); padding: clamp(3rem, 7vw, 7rem) 0; }
+.statement-section__headline { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(16rem, 0.5fr); gap: clamp(2rem, 9vw, 10rem); padding: clamp(2rem, 4vw, 4rem) 0; }
 .statement-section__headline h2 { margin: 0; font-family: var(--font-display); font-size: clamp(3.4rem, 7.5vw, 7.9rem); font-weight: 400; letter-spacing: -0.082em; line-height: 0.88; }
 .statement-section__headline p { align-self: end; max-width: 25rem; margin: 0; font-family: var(--font-display); font-size: clamp(1.35rem, 2vw, 2rem); letter-spacing: -0.05em; line-height: 1.1; }
 .statement-section__image { position: relative; height: clamp(32rem, 58vw, 60rem); overflow: hidden; }
@@ -273,7 +270,7 @@ html[data-a11y-motion="reduce"] *, html[data-a11y-motion="reduce"] *::before, ht
 .experience-strip h3 { margin: 1.1rem 1.2rem 0; font-family: var(--font-display); font-size: 2rem; font-weight: 400; letter-spacing: -0.055em; }
 .experience-strip p { margin: 0.55rem 1.2rem 0; color: #5e5b54; font-size: 0.72rem; line-height: 1.6; }
 
-/* Location and map */
+/* Ubicación y mapa */
 .location-scene__media { position: relative; overflow: hidden; }
 .location-map { display: grid; width: 100vw; grid-template-columns: minmax(16rem, 0.65fr) minmax(0, 1.35fr); min-height: 30rem; margin: 0 0 0 calc(50% - 50vw); background: #1b211c; color: #f7f5ef; }
 .location-map__copy { display: flex; flex-direction: column; justify-content: end; padding: clamp(2rem, 6vw, 6rem); }
@@ -281,7 +278,6 @@ html[data-a11y-motion="reduce"] *, html[data-a11y-motion="reduce"] *::before, ht
 .location-map__copy > p:last-child { margin: 1.4rem 0 0; color: rgb(255 255 255 / 0.66); font-size: 0.72rem; line-height: 1.6; }
 .location-map iframe { align-self: center; justify-self: center; width: min(calc(100% - 4rem), 58rem); min-height: 25rem; border: 0; margin: 2rem 0; box-shadow: 0 1.2rem 3rem rgb(0 0 0 / 0.22); }
 
-/* Social proof and private inquiry */
 .testimonials-altum { color: #f7f5ef; background: #11110f; }
 .testimonials-altum__header { display: flex; justify-content: space-between; gap: 2rem; border-bottom: 1px solid rgb(255 255 255 / 0.2); padding-bottom: 1.2rem; }
 .testimonials-altum__header > p:last-child { max-width: 20rem; margin: 0; color: rgb(255 255 255 / 0.62); font-size: 0.72rem; line-height: 1.6; text-align: right; }
@@ -312,7 +308,7 @@ html[data-a11y-motion="reduce"] *, html[data-a11y-motion="reduce"] *::before, ht
 .specific-inquiry__form button:hover { color: #1e2b22; background: #f7f5ef; }
 .specific-inquiry__note { margin: 1rem auto 0; color: rgb(255 255 255 / 0.48); font-size: 0.56rem; text-align: center; }
 
-/* Video visit and richer footer */
+/* Video de visita */
 .contact-conversion__video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .altum-footer { color: #f7f5ef; background: #11110f; }
 .altum-footer > div { padding-top: clamp(3rem, 7vw, 7rem); padding-bottom: 1.5rem; }
@@ -361,7 +357,6 @@ html[data-a11y-motion="reduce"] *, html[data-a11y-motion="reduce"] *::before, ht
 }
 @media (max-width: 31rem) { .hero-scroll__center h1 { font-size: 5rem; } .hero-scroll__side--left { left: 1rem; } .hero-scroll__side--right { right: 1rem; } .testimonials-altum__stage { grid-template-columns: 2.25rem minmax(0, 1fr) 2.25rem; gap: 0.35rem; } .testimonials-altum__stage > button { width: 2.2rem; height: 2.2rem; } }
 
-/* A single, considered opening. The navigation tracks the real sections below it. */
 .minimal-nav { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 2rem; padding-top: 1.35rem; padding-bottom: 1.35rem; }
 .minimal-nav__links, .minimal-nav__right { display: flex; align-items: center; }
 .minimal-nav__links { gap: clamp(1rem, 1.8vw, 2rem); }
@@ -398,7 +393,6 @@ html[data-a11y-motion="reduce"] *, html[data-a11y-motion="reduce"] *::before, ht
   .hero-scroll__bottom span:nth-child(2) { display: none; }
 }
 
-/* The header belongs to the image at the top, then settles into a calm surface. */
 .minimal-nav { color: #fff; mix-blend-mode: normal; text-shadow: 0 1px 12px rgb(0 0 0 / 0.42); transition: color 320ms ease, background 320ms ease, box-shadow 320ms ease, padding 320ms ease; }
 .minimal-nav--solid { padding-top: 1rem; padding-bottom: 1rem; color: #20221e; background: rgb(245 243 237 / 0.96); box-shadow: 0 1px 0 rgb(32 34 30 / 0.12); text-shadow: none; backdrop-filter: blur(14px); }
 .minimal-nav--solid .minimal-nav__trigger { border-color: rgb(32 34 30 / 0.52); }
@@ -464,7 +458,6 @@ html[data-a11y-motion="reduce"] *, html[data-a11y-motion="reduce"] *::before, ht
   .testimonials-altum__grid article { min-height: 14rem; }
 }
 
-/* Deliberate scroll entrances: sections should arrive, not simply be present. */
 @keyframes reveal-arrival {
   from { opacity: 0; transform: translateY(2.25rem); }
   to { opacity: 1; transform: translateY(0); }
@@ -474,7 +467,6 @@ html[data-a11y-motion="reduce"] *, html[data-a11y-motion="reduce"] *::before, ht
 [data-reveal-ready="true"][data-reveal="visible"] { animation: reveal-arrival 920ms cubic-bezier(0.16, 1, 0.3, 1) both; }
 [data-reveal-ready="true"][data-reveal="visible"] > * { animation: reveal-arrival 980ms 80ms cubic-bezier(0.16, 1, 0.3, 1) both; }
 
-/* Image cards gain depth without losing the calm, architectural tone. */
 .experience-strip article { position: relative; transform: translateZ(0); transition: transform 460ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 460ms cubic-bezier(0.16, 1, 0.3, 1); }
 .experience-strip article > div { isolation: isolate; }
 .experience-strip article > div::after { position: absolute; z-index: 1; inset: 0; content: ""; background: linear-gradient(135deg, rgb(255 255 255 / 0.18), transparent 38%, rgb(0 0 0 / 0.28)); opacity: 0; pointer-events: none; transition: opacity 460ms ease; }
@@ -484,7 +476,6 @@ html[data-a11y-motion="reduce"] *, html[data-a11y-motion="reduce"] *::before, ht
 .experience-strip article:hover img { transform: scale(1.075); filter: saturate(1.05) contrast(1.03); }
 @media (prefers-reduced-motion: reduce) { .experience-strip article, .experience-strip article img { transition: none; } .experience-strip article:hover { transform: none; } }
 
-/* Testimonios: dos voces por vista, para que el contenido respire y se lea con calma. */
 .testimonials-altum { color: #f7f5ef; background: #151714; }
 .testimonials-altum__header { align-items: end; border-color: rgb(255 255 255 / 0.18); }
 .testimonials-altum__header > p:last-child { color: rgb(255 255 255 / 0.62); }
@@ -505,7 +496,6 @@ html[data-a11y-motion="reduce"] *, html[data-a11y-motion="reduce"] *::before, ht
   .testimonials-altum__grid article { min-height: 14rem; }
 }
 
-/* Final hierarchy pass: tighter header, richer experience section, calmer palette. */
 .minimal-nav { padding-right: clamp(2rem, 5vw, 5.5rem); padding-left: clamp(2rem, 5vw, 5.5rem); }
 .minimal-nav__trigger { border: 0; border-radius: 0; padding: 0.45rem 0; }
 .minimal-nav__trigger span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
@@ -542,7 +532,6 @@ html[data-a11y-motion="reduce"] *, html[data-a11y-motion="reduce"] *::before, ht
 .residence-index__intro-aside > span { position: absolute; top: -0.3rem; right: 0; color: rgb(189 206 180 / 0.18); font-family: var(--font-display); font-size: clamp(9rem, 17vw, 18rem); font-weight: 400; letter-spacing: -0.12em; line-height: 0.72; }
 .residence-index__intro-aside p { position: relative; z-index: 1; align-self: end; max-width: 20rem; margin: 0; color: rgb(255 255 255 / 0.72); font-size: 0.9rem; line-height: 1.7; }
 
-/* Residences overview and material cards */
 .residence-index__intro-aside { align-content: start; gap: 0.9rem; border-left: 1px solid rgb(255 255 255 / 0.2); padding-left: clamp(1.5rem, 3vw, 3rem); }
 .residence-index__intro-aside > span { display: none; }
 .residence-index__aside-label { align-self: auto !important; color: #bdceb4 !important; font-size: 0.57rem !important; font-weight: 700; letter-spacing: 0.14em; line-height: 1.35 !important; text-transform: uppercase; }

@@ -5,11 +5,20 @@ interface SectionProps {
   children: ReactNode;
   className?: string;
   id?: string;
+  spacing?: string;
 }
 
-export default function Section({ children, className, id }: SectionProps) {
+export default function Section({
+  children,
+  className,
+  id,
+  spacing = "py-20 sm:py-24 lg:py-32",
+}: SectionProps) {
   return (
-    <section id={id} className={clsx("py-20 sm:py-24 lg:py-32", className)}>
+    <section
+      id={id}
+      className={clsx(spacing, className)}
+    >
       {children}
     </section>
   );

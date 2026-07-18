@@ -8,7 +8,6 @@ type MediaPlaceholderProps = {
   variant?: "dark" | "light" | "warm";
 };
 
-/** A layout-safe reserve for final architectural photography or film. */
 export default function MediaPlaceholder({
   alt,
   className,
